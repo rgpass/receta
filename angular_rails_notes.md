@@ -23,4 +23,18 @@
         * Add angular/angular
           * This is required because we need to say exactly what's loaded in
             or else it'll load in random files (see bower_components/angular)
-      
+
+* Pre-populating cache files
+  * Gemfile: gem 'angular-rails-templates'
+  * Bowerfile: asset 'angular-route'
+  * rake bower:install
+  * application.js
+    ```
+      //= require angular-route/angular-route
+      //= require angular-rails-templates
+    ```
+
+* Views
+  * Created index.html which refers to ng-views
+  * Created route in app.coffee
+  * Created template in assets/javascripts/templates/index.html

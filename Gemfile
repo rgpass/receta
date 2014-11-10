@@ -10,6 +10,7 @@ gem 'jquery-rails'
 # gem 'turbolinks' # Removed since it's not applicable for Angular apps
 gem 'jbuilder', '~> 1.2'
 gem 'bower-rails' # Connects Rails to Bower for front-end dependency mgmt
+gem 'angular-rails-templates' # Solves CORS and asset pipeline issues: http://angular-rails.com/find_and_browse.html
 
 
 # Mostly Heroku-specific gems, don't hurt to keep if not using Heroku
